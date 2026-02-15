@@ -4,7 +4,7 @@
 
 ### Give your AI agent eyes on the web.
 
-Plug-and-play [Vercel AI SDK](https://sdk.vercel.ai) tools powered by [Bright Data](https://brightdata.com) — scrape any site, search any engine, and collect structured data from Amazon, LinkedIn, Instagram, Facebook, and more.
+Plug-and-play [Vercel AI SDK](https://sdk.vercel.ai) tools powered by [Bright Data](https://brightdata.com) - scrape any site, search any engine, and collect structured data from Amazon, LinkedIn, Instagram, Facebook, and more.
 
 [![npm version](https://img.shields.io/npm/v/@brightdata/ai-sdk.svg)](https://www.npmjs.com/package/@brightdata/ai-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -210,25 +210,6 @@ Every tool factory accepts an options object. Common options:
 
 **`chatgpt()`** also accepts:
 - `format` — `'json'` | `'jsonl'`
-
----
-
-## How It Works
-
-```
-Your App ──► AI SDK (generateText / streamText)
-                │
-                ├──► model decides to call `search` tool
-                │       └──► Bright Data SERP API ──► results back to model
-                │
-                ├──► model decides to call `scrape` tool
-                │       └──► Bright Data Web Unlocker ──► page content back to model
-                │
-                └──► model decides to call `amazon_product` tool
-                        └──► Bright Data Datasets API ──► product JSON back to model
-```
-
-Each tool is a standard Vercel AI SDK `tool()` instance. The model receives the tool descriptions and schemas, then autonomously decides which tools to call based on the user's prompt.
 
 ---
 
