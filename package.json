@@ -17,6 +17,7 @@
     ],
     "scripts": {
         "build": "tsup src/index.ts --format esm --dts",
+        "test": "npm run build && node --test test/*.test.mjs",
         "smoke_test": "npm run build && node scripts/smoke_test.mjs",
         "prepublishOnly": "npm run build"
     },
