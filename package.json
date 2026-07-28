@@ -38,17 +38,17 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/nicecopy/bright-data-ai-sdk"
+        "url": "https://github.com/brightdata/ai-sdk"
     },
-    "homepage": "https://docs.brightdata.com/scraping-automation/ai-integrations/ai-sdk",
+    "homepage": "https://docs.brightdata.com/integrations/vercel-ai-sdk",
     "bugs": {
-        "url": "https://github.com/nicecopy/bright-data-ai-sdk/issues"
+        "url": "https://github.com/brightdata/ai-sdk/issues"
     },
     "dependencies": {
         "@brightdata/sdk": "^0.2.0"
     },
     "peerDependencies": {
-        "ai": "^5.0.0 || ^6.0.0",
+        "ai": "^5.0.0 || ^6.0.0 || ^7.0.0",
         "zod": "^4.0.0"
     },
     "engines": {
